@@ -194,10 +194,10 @@ window.addEventListener('keydown', (e) => {
     } else if (e.key === 'ArrowDown') {
         lastKeyArrow = 'ArrowDown';
         keys.ArrowDown.isPressed = true;
-    } else if (e.key === 'z') {
+    } else if (e.key.toLocaleLowerCase() === 'z') {
         lastKey = 'z';
         keys.z.isPressed = true;
-    } else if (e.key === 's') {
+    } else if (e.key.toLocaleLowerCase() === 's') {
         lastKey = 's';
         keys.s.isPressed = true;
     }
@@ -208,9 +208,9 @@ window.addEventListener('keyup', (e) => {
         keys.ArrowUp.isPressed = false;
     } else if (e.key === 'ArrowDown') {
         keys.ArrowDown.isPressed = false;
-    } else if (e.key === 'z') {
+    } else if (e.key.toLocaleLowerCase() === 'z') {
         keys.z.isPressed = false;
-    } else if (e.key === 's') {
+    } else if (e.key.toLocaleLowerCase() === 's') {
         keys.s.isPressed = false;
     }
 });
